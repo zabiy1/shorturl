@@ -76,7 +76,7 @@
       <div class="input-group mb-3">
         <input type="text" class="form-control" placeholder="Example: https://example.com/" id="text">
         <div class="input-group-append">
-          <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">生成</button>
+          <button class="btn btn-primary" type="button" onclick='shorturl()' id="searchbtn">缩短</button>
         </div>
       </div>
       <p id="notice"></p>
@@ -86,12 +86,12 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">以下是所生成的短链接：</h5>
+          <h5 class="modal-title" id="exampleModalLabel">以下是所缩短的短链接：</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="result">生成失败😥</div>
+        <div class="modal-body" id="result">缩短失败😥</div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" onclick='copyurl("result")' data-toggle="popover" data-placement="bottom" data-content="复制成功！">复制</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>    
